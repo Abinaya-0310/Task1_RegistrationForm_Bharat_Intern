@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name ="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <link
+            rel="shortcut icon"
+            href="https://th.bing.com/th/id/OIP.kwE8IapDUTtylieeRnn2YAHaHa?pid=ImgDet&rs=1"
+            type="image/x-icon"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstraps@5.2.3/dist/css/bootstrap.min.css"
+            integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+            crossorigin="anonymous"
+        />
+        <title id="title">Registration Form</title>
+        <head>
+        <body class="background-radial-gradient">
+            <style>
+                .background-radial-gradient {
+                    background-color: antiquewhite;
+                    background-image: radial-gradient(
+                        650px circle at 0% 0%,
+                        hsl(218,41%,35%) 15%,
+                        hsl(218,41%,30%) 35%,
+                        hsl(218,41%,20%) 75%,
+                        hsl(218,41%,19%) 80%,
+                        transparent 100%
+                    );
+                    position: relative;
+                    min-height: 100vh;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 20px;
+                    box-sizing: border-box;
+                }
+                .title {
+                    font-family: 'Times New Roman', Times, serif;
+                }
+                #radius-shape-1 {
+                    height: 220px;
+                    width: 220px;
+                    position: absolute;
+                    top: 110px;
+                    left: 130px;
+                    background: radial-gradient(#44006b, #ad1fff);
+                    overflow: hidden;
+                    border-radius: 50%;
+                }
+    
+                #radius-shape-2 {
+                    height: 220px;
+                    width: 220px;
+                    position: absolute;
+                    top: 110px;
+                    left: 350px;
+                    background: radial-gradient(#44006b, #ad1fff);
+                    overflow: hidden;
+                    border-radius: 50%;
+                }
+    
+                body {
+                    font-family: Arial, sans-serif;
+                    margin: 0;
+                    padding: 0;
+                }
+    
+                .form-container {
+                    max-width: 300px;
+                    margin: 0 auto;
+                    padding: 1em;
+                    background: rgb(183, 44, 44);
+                    border: 1px solid #ccc;
+                    border-radius: 1em;
+                    position: relative;
+                    z-index: 1;
+                }
+                h2 {
+                    font-family: 'Times New Roman', Times, serif;
+                }
+                .form-container h2 {
+                    text-align: center;
+                    width: 30px;
+                    height: auto;
+                    font-family: 'Times New Roman', Times, serif;
+                }
+    
+                .form-container div {
+                    margin-bottom: 1em;
+                }
+    
+                .form-container label {
+                    margin-bottom: 1em;
+                    color: #333333;
+                    width: 30px;
+                    height: auto;
+                    font-family: 'Times New Roman', Times, serif;
+                }
+    
+                .form-container input {
+                    border: 1px solid #ccc;
+                    padding: .5em;
+                    font-size: 1em;
+                    width: 30px;
+                    height: auto;
+                    box-sizing: border-box;
+                }
+    
+                .form-container button {
+                    padding: 0.7em;
+                    color: #fff;
+                    background-color: #007BFF;
+                    border: none;
+                    border-radius: 0.3em;
+                    cursor: pointer;
+                    width: 100%;
+                }
+    
+                .card {
+                    max-width: 500px;
+                    margin: auto;
+                    border-radius: 1em;
+                    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+                    position: relative;
+                    z-index: 1;
+                    background-color:rgb(224, 206, 216);
+                }
+    
+                .card-body {
+                    padding: 5em;
+                }
+                form {
+                    width: 75%;
+                    margin: auto;
+                    padding: 20px;
+                    border: 1px solid #ccc;
+                    font-size: 15px; 
+                    font-family: 'Times New Roman', Times, serif;
+                    background-color: rgb(188, 158, 175);
+                    border-radius: 20px;
+                }
+                button{
+                    display: block;
+                    margin: 0 auto;
+                    font-family:'Times New Roman', Times, serif;
+                    font-size: medium;
+                }
+    
+            </style>
+            <section class="text-center">
+                <div id="radius-shape-1"
+                class="position-absolute rounded-circle shadow-5-strong"
+                ></div>
+                <div id="radius-shape-2" class="position-absolute shadow-5-strong"></div>
+                <div class="card mx-9 lg-12 mx-md-5 shadow-5-strong" id="card">
+                    <div class="card-body px-md-5 align-left">
+                        <h2 class="fw-bold mb-5" id="title">Registration Form</h2>
+
+                        <form method="post" action="/register" style="text-align:left">
+                            <div class="form-outline mb-4">
+                                <label class="form-label" for="form3Example1">Name</label>
+                                <input type="text" id="form3Example1" name="name" class="form-control"/>
+                            </div>
+                        
+                            <div class="form-outline mb-4">
+                                <label class="form-label" for="form3Example3">Email</label>
+                                <input type="email" id="form3Example3" name="email" class="form-control"/>
+                            </div>
+
+                            <div class="form-outline mb-4">
+                                <label class="form-label" for="form3Example4">Password</label>
+                                <input type="password" id="form3Example4" name="password" class="form-control" />
+                            </div>
+                            <br>
+                            <button type="submit" class="btn btn-primary btn-block mb-4">Register</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+
+            <script>
+
+            </script>
+        </body>
+        </head>
+    </head>
+</html>
